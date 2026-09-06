@@ -8,6 +8,7 @@ Este repositorio forma parte del proyecto **Plataforma IoT**, desarrollado como 
 en Telecomunicaciones. El repositorio principal del proyecto funciona como punto de acceso a la documentación
 general y a los distintos componentes del sistema: 🔗 https://github.com/adriangallicet/tesis-plataforma-iot
 
+
 <img src="img/diagrama.jfif" alt="Diagrama" style="max-width: 600px; width: 80%;">
 
 ---
@@ -548,7 +549,7 @@ Ambas condiciones se aplicaron de forma simultánea durante toda la corrida del 
 
 La siguiente captura muestra, en la misma pantalla, la consola con el benchmark ejecutándose bajo esta condición (`red_degradada_n300`) y la configuración de clumsy utilizada:
 
-![Benchmark corriendo con red degradada mediante clumsy](img/clumsy_red_degradada.jpg)
+![Benchmark corriendo con red degradada mediante clumsy](img/clumsy_red_degradada.jpg.jpg)
 
 Se puede observar que, además del incremento general del RTT promedio, aparecen picos puntuales muy por encima del resto (por ejemplo, iteraciones con RTT de `6111 ms` o `4497 ms`). Estos picos son consistentes con el comportamiento esperado de la función **Drop**: cuando un paquete se descarta, la confirmación correspondiente no llega en el intervalo normal y el mensaje debe reintentarse o esperar más tiempo antes de resolverse, lo que se traduce en RTT anómalamente altos dentro de la misma serie de mediciones.
 
